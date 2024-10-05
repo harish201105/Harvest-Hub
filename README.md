@@ -2,10 +2,6 @@
 
 ---
 
-# Front End Development
-
----
-
 Harvest Hub is an Agriculture Management System designed to streamline and optimize various farming processes. It offers a user-friendly interface for farmers and landowners to manage their farms, crops, machinery, and more. The system aims to enhance productivity, reduce manual efforts, and provide valuable insights for informed decision-making in the agriculture domain.
 
 ---
