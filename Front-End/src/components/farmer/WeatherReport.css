@@ -1,0 +1,205 @@
+/* Apply the background image across the entire screen */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('https://i.pinimg.com/originals/85/2c/c2/852cc25bf96062e8c49c202e9a32760e.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Weather container */
+.weather-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight opacity for readability */
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    color: #333; /* Text color */
+    overflow: hidden;
+}
+
+/* Background overlays with gradient */
+.sunny-bg {
+    background: linear-gradient(to bottom right, rgba(255, 221, 89, 0.7), rgba(255, 159, 67, 0.7));
+}
+
+.cloudy-bg {
+    background: linear-gradient(to bottom right, rgba(169, 169, 169, 0.7), rgba(100, 100, 100, 0.7));
+}
+
+.rainy-bg {
+    background: linear-gradient(to bottom right, rgba(116, 185, 255, 0.7), rgba(0, 206, 201, 0.7));
+}
+
+.default-bg {
+    background: linear-gradient(to bottom right, rgba(245, 245, 245, 0.7), rgba(200, 200, 200, 0.7));
+}
+
+/* Weather details container */
+.weather-details {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    text-align: left;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow to lift the element */
+}
+
+/* Weather report heading */
+h2 {
+    font-size: 2.5rem; /* Larger and bolder heading */
+    font-weight: 700;
+    color: #2d3436; /* Darker color for contrast */
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+}
+
+/* Weather header alignment */
+.weather-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.temp-details {
+    margin-left: 20px;
+}
+
+.temp-details h1 {
+    font-size: 5rem; /* Large but balanced size */
+    font-weight: bold;
+    margin: 0;
+    color: #2d3436; /* Neutral dark color for temperature */
+}
+
+.temp-details p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Weather icon (now colorful and properly aligned) */
+.animated-icon {
+    font-size: 5rem;  /* Adjust icon size to match temperature text */
+    color: #FFB400;  /* Apply a colorful theme for the weather icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Info boxes layout */
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.info-box {
+    flex: 1 1 45%;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add interactive hover effect */
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-box p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Weather chart styling */
+.weather-chart {
+    margin-top: 30px;
+}
+
+/* Weather form section */
+.weather-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+/* Form input and select styling */
+.weather-form select,
+.weather-form input {
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 1.1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.weather-form select:focus,
+.weather-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit button styling */
+.weather-form button {
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weather-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .weather-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        flex: 1 1 80%;
+        margin-bottom: 20px;
+    }
+
+    .temp-details h1 {
+        font-size: 3.5rem;
+    }
+
+    .weather-form input, .weather-form select {
+        font-size: 1.1rem;
+    }
+
+    .weather-form button {
+        font-size: 1.1rem;
+    }
+}
