@@ -36,6 +36,11 @@ Harvest Hub is an Agriculture Management System designed to streamline and optim
    git clone https://github.com/harish201105/Harvest-Hub.git
 ```
 
+
+# Front End Development
+
+---
+
 2. Navigate to the frontend project directory:
 
 ```
@@ -73,7 +78,7 @@ Make sure you have Node.js and npm installed.
 
 ---
 
-Harvest Hub is a web application designed to manage various aspects of crop cultivation and farm management. This repository contains the backend codebase for the CropMaster application.
+Harvest Hub is a web application designed to manage various aspects of crop cultivation and farm management. This repository contains the backend codebase for the Harvest Hub application.
 
 ## Description
 
@@ -118,14 +123,6 @@ Harvest Hub is a comprehensive solution for farmers and farm owners to manage th
    ```
    cd Back-End
    ```
-
-3. Update the database configuration in src/main/resources/application.properties:
-
-```
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
-spring.datasource.username=your_database_username
-spring.datasource.password=your_database_password
-```
 
 3. Update the database configuration in src/main/resources/application.properties:
 
